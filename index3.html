@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishika Sinha Portfolio</title>
+  <style>
+    /* Reset and basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #010a29, #010a1a, black);
+      color: #f9f9f9;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      text-align: center;
+      padding: 6rem 2rem 5rem;
+      position: relative;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 180px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      color: #fff;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(90deg, #ff6600, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #ffcc88;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-top: 1.5rem;
+      min-height: 40px;
+    }
+
+    .typing-text::after {
+      content: "|";
+      animation: blink 0.7s infinite;
+      margin-left: 5px;
+    }
+
+    @keyframes blink {
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* Skills Section */
+    .skills-section {
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #ff6600;
+    }
+
+    .skills span {
+      color: white;
+      background-color: #6d0952;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 30px;
+      display: inline-block;
+    }
+
+    /* Projects Section */
+    .projects-section {
+      padding: 4rem 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background-color: #06192c;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgb(4, 5, 51);
+    }
+
+    .project h3 {
+      color: #ffbb33;
+    }
+
+    .project a {
+      color: #ffbb33;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: #ffbb33;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #010a1a;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <img src="avatar.png" alt="Rishika Avatar" class="avatar" />
+    <h1 class="hero-title">Hi, I'm <span class="highlight">Rishika Sinha</span> 👩‍💻</h1>
+    <p class="subtitle">Computer Science Engineering Student | Tech Enthusiast | Problem Solver</p>
+    <p class="hero-description">
+      <span class="typing-text"></span>
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>🛠️ My Tech Stack</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Express.js</span>
+      <span>CAD</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>🚀 Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>AVITAR Website</h3>
+        <p>Custom automobile design website for BAJA ATV using React & 3D rendering.</p>
+        <a href="#">View Project →</a>
+      </div>
+      <div class="project">
+        <h3>Network Scanner</h3>
+        <p>Tool for scanning and analyzing devices on a local network.</p>
+        <a href="https://github.com/rishikasinha29/Project_Exhibition_2" target="_blank">View Project →</a>
+      </div>
+      <div class="project">
+        <h3>Digital Passport App</h3>
+        <p>A secure digital passport and credential verification system.</p>
+        <a href="https://github.com/rishikasinha29/digital-passport-app" target="_blank">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>📫 Let’s Connect</h2>
+    <div class="social-links">
+      <a href="https://github.com/rishikasinha29" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/rishika-sinha-8a460b2b0" target="_blank">LinkedIn</a>
+      <a href="mailto:rishika.23bce10762@vitbhopal.ac.in">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Rishika Sinha</p>
+  </footer>
+
+  <script>
+    // Typing animation
+    const typingPhrases = [
+      "Cybersecurity enthusiast with a passion for ethical hacking.",
+      "Web developer who loves building intuitive user experiences.",
+      "CAD designer with a creative and analytical mindset.",
+      "Always learning. Always building. 🚀"
+    ];
+    let i = 0,
+      j = 0,
+      currentPhrase = [],
+      isDeleting = false;
+    const typingText = document.querySelector(".typing-text");
+
+    function loop() {
+      typingText.innerHTML = currentPhrase.join("");
+
+      if (!isDeleting && j <= typingPhrases[i].length) {
+        currentPhrase.push(typingPhrases[i][j]);
+        j++;
+      }
+
+      if (isDeleting && j > 0) {
+        currentPhrase.pop();
+        j--;
+      }
+
+      if (j === typingPhrases[i].length) {
+        isDeleting = true;
+        setTimeout(loop, 2000);
+        return;
+      }
+
+      if (isDeleting && j === 0) {
+        currentPhrase = [];
+        isDeleting = false;
+        i = (i + 1) % typingPhrases.length;
+      }
+
+      setTimeout(loop, isDeleting ? 50 : 100);
+    }
+
+    loop();
+
+    // Smooth scroll (optional enhancement if you add navbar)
+    document.querySelectorAll("a[href^='#']").forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
